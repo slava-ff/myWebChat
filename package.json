@@ -1,0 +1,16 @@
+{
+  "name": "webicq",
+  "version": "1.1.0",
+  "description": "webicq",
+  "main": "index.js",
+  "dependencies": {
+    "crypto": "*",
+    "websocket": "*",
+    "mongodb": "*",
+    "arangojs": "*"
+  },
+  "scripts": {
+    "postinstall-1": ""
+  }
+}
+

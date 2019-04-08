@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            My 1st chat
+        </title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+
+    <body>
+        <div id="divLogReg">
+            User name:<br>
+            <input id="txtLoginName" type="text" class="logReg" autofocus/>
+            <br>
+            Password:<br>
+            <input id="txtPassword1" type="password" class="logReg"/>
+            <button id="btnLogin" type="reset" class="logRegBtn">Login</button>
+            <br>
+            <br>
+            To register - enter password again and press "Register":<br>
+            <input id="txtPassword2" type="password" class="logReg"/>
+            <button id="btnRegister" type="reset" class="logRegBtn">Register</button>
+        </div>
+        <div id="divMain">
+            <div id="divSide">
+                <!--<button class="accordion">Menu</button>-->
+                <!--<div class="panel">-->
+                <button id="btnLogout" type="reset">Logout</button>
+                <button id="btnMyInfo" type="reset">Personal data</button>
+                <!--</div>-->
+                <div id="divName">
+                    My name:<br/>
+                    <input type="text" id="txtName">
+                </div>
+                </br>
+                <div id="divStatus">
+                    My status:<br/>
+                    <select id="selectStatus">
+                        <option value="online">Online</option>
+                        <option value="away">Away</option>
+                        <option value="offline">Invisible</option>
+                    </select>
+                </div>
+                <br/>
+                Users and rooms:
+                <input type="text" id="txtURSearch" class="txtURSearchVisible active" placeholder="Search...">
+                <button id="btnAddRoom" class="btn1 active" type="reset">Add Room</button>
+                <input type="text" id="txtRoomName" class="txtRName" placeholder="Room name...">
+                <div id="divList" class="divListVisible active">
+                    <!-- dynamic part, multiple instances ------------------------------------------------------------->
+                        <div class="divItem active">
+                        <img class="imgStatus" src="status-online.png" />
+                        <div class="divName">test</div>
+                        <div class="divInfo">5</div>
+                    </div>
+                    <!------------------------------------------------------------------------------------------------->
+                </div>
+                <div id="divSearchList">
+                    <!-- dynamic part, multiple instances ------------------------------------------------------------->
+                    <div class="divItem">
+                        <img class="imgStatus" src="status-unknown.png" />
+                        <div class="divName">test</div>
+                        <img class="imgAdd" src="status-add.png" />
+                    </div>
+                    <!------------------------------------------------------------------------------------------------->
+                </div>
+                <button id="btnRCreate" class="btn1" type="reset">Create</button>
+                <button id="btnRCancel" class="btn1" type="reset">Cancel</button>
+            </div>
+            <div id="divMyInfo">
+                <div class="divInfo">Personal Data
+                    <!--<button class="btnInfo" type="reset">Info</button>-->
+                </div>
+                <div class="divUser">
+                    <!--<button class="btnRemove" type="reset">Delete user</button><br>-->
+                    <table class="divUserInfo">
+                        <!-- поменять классы!! -->
+                        <tr><td class="label">User name</td><td><input type="text" id="divMyUName" class="inputInfo"></td></tr>
+                        <tr><td class="label">First Name</td><td><input type="text" id="divMyFName" class="inputInfo"></td></tr>
+                        <tr><td class="label">Last Name</td><td><input type="text" id="divMyLName" class="inputInfo"></td></tr>
+                        <tr><td class="label">Phone number</td><td><input type="text" id="divMyPhone" class="inputInfo"></td></tr>
+                        <tr><td class="label">E-mail</td><td><input type="text" id="divMyEMail" class="inputInfo"></td></tr>
+                        <tr><td class="label">Facebook</td><td><input type="text" id="divMyFB" class="inputInfo"></td></tr>
+                    </table>
+                    <button id="btnConfirm" type="reset">Accept</button><button id="btnCancel" type="reset">Cancel</button>
+                </div>
+            </div>
+            <div id="divChats">
+                <!-- dynamic part, multiple instances ----------------------------------------------------------------->
+                <div class="divChat">
+
+                    <div class="divInfo">
+                        <button class="btnInfo" type="reset">Info</button>
+                    </div>
+
+                    <div class="divConv">
+                        <div class="divText"></div>
+                        <div class="divInput">
+                            <textarea class="txtInput" rows="3"></textarea>
+                            <button id="btnInput" type="reset">Send</button>
+                        </div>
+                    </div>
+
+                    <div class="divUser">
+                        <button class="btnRemove" type="reset">Delete user</button><br>
+                        <table class="divUserInfo">
+                            <tr><td class="label">User name</td><td id="divItemUName" class="text">123</td></tr>
+                            <tr><td class="label">First Name</td><td id="divItemFName" class="text">Sla</td></tr>
+                            <tr><td class="label">Last Name</td><td id="divItemLName" class="text">Fo</td></tr>
+                            <tr><td class="label">Phone number</td><td id="divItemPhone" class="text">+123123123</td></tr>
+                            <tr><td class="label">E-mail</td><td id="divItemEMail" class="text">abc@xyz.com</td></tr>
+                            <tr><td class="label">Facebook</td><td id="divItemFB" class="link"><a href="https://www.facebook.com/">Sla Fom</a></td></tr>
+                            <tr><td class="label">LinkedIn</td><td id="divItemLI" class="link"><a href="https://vk.com/">Sla F</a></td></tr>
+                            <tr><td class="label">Instagram</td><td id="divItemInsta" class="link"><a href="https://www.facebook.com/">Sla FF</a></td></tr>
+                            <tr><td class="label">Twitter</td><td id="divItemTwi" class="link"><a href="https://www.facebook.com/">Sla FFF</a></td></tr>
+                        </table>
+                    </div>
+
+                </div>
+                <!----------------------------------------------------------------------------------------------------->
+            </div>
+        </div>
+        <script type="text/javascript" src="/script.js"></script>
+    </body>
+</html>
+

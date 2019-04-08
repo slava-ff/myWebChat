@@ -1,0 +1,113 @@
+learn to work with files and create little bit more sophisticated data structures in memory
+
+
+abbreviations:
+
+uts  - unix time stamp
+
+
+
+
+OBJECTS
+============================================
+
+------------------------------------------------------------------------------------------------
+ROOM -- a common chat area for two or more participants
+------------------------------------------------------------------------------------------------
+
+it has many users with many messages,
+newly joined users will see messages leaved by others
+each user manages its own "copy" of all messages
+
+var room = {
+    id: <rid>,        room id, unique across all rooms within a system
+    name: <string>    name of the room
+};
+
+<rid> : 'r' + <uts>
+------------------------------------------------------------------------------------------------
+USER -- an user account
+------------------------------------------------------------------------------------------------
+
+var user = {
+    id: <uid>,        user id, unique across all users within a system
+    name: <string>,   name of the user
+    status: <status> / string, user's status he want ot have
+};
+
+<uid> : 'u' + <uts>
+
+  ------------------------------------------------------------------------------------------------
+  MESSAGE -- a message
+  ------------------------------------------------------------------------------------------------
+
+  var message = {
+      id: <mid>,                 message id, unique across all messages within a room
+      ts: <ts>,                  message timestamp (12 digit unix timestamp format, to be stamped by server, UTC)
+      uid: <uid>,                user id, sender of message
+      text: <string|object>      text of the message (text, url, or whatever)
+  };
+
+<mid> : 'm' + <uts>
+------------------------------------------------------------------------------------------------
+CLIENT -- a software client connected to the backend
+------------------------------------------------------------------------------------------------
+
+var client = {
+    id: <cid>,
+    user: <user>,
+    conn: <conn>                socket connection
+    send: <function>            send to connection socket
+};
+
+<cid> : 'c' + <uts>
+
+
+MEMORY DATA STRUCTURE
+============================================
+
+to reduce duplicates and optimize access to data all structures in memory are linked objects,
+and on the disk structures are stored in separate files and are mapped/linked by ids
+on server start and data load we will read files and link rooms/users/messages in memory according to mapping stored on disk
+on save we will write mapped objects according to how messages linked in memory
+an example of data structures in the memory:
+
+var data = {
+  "r111": {
+    id: "r111",
+    name: "our room",
+    users: {
+        "u111": {
+            id: "u111",
+            name: "name1",
+            status: "online",
+            messages:[{msg1},{msg2},...,{msgN}] / msg1..msgN are pointers to messages below
+        },
+        ...,
+        "uNNN": {...},
+    },
+    messages:[
+        {id: m1, ts: 123..., uid: "u111", text: "text", ...},
+        {id: m2, ts: 234..., uid: "u222", text: "text", ...},
+        ...,
+        {id: mN, ts: 999..., uid: "uNNN", text: "text", ...}
+    ]
+  },
+  "r222": {
+  ...
+  }
+}
+
+
+
+
+FILE DATA STRUCTURES
+============================================
+
+rooms.json -- stores list of known rooms
+users.json -- stores list of known users
+messages.json -- stores list of all messages
+
+
+
+

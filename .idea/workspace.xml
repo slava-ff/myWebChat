@@ -1,0 +1,1321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f5e747ee-baf9-467c-bd49-c7a6a75acb17" name="Default" comment="" />
+    <ignored path="webicq.iws" />
+    <ignored path=".idea/" />
+    <ignored path="node_modules/" />
+    <manually-removed-from-ignored>
+      <directory path="$PROJECT_DIR$/.tmp/" />
+      <directory path="$PROJECT_DIR$/tmp/" />
+      <directory path="$PROJECT_DIR$/temp/" />
+    </manually-removed-from-ignored>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="webicq" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/awesome-test/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="71" column="12" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/awesome-test/node_modules/express/lib/application.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="10370">
+              <caret line="616" column="6" selection-start-line="616" selection-start-column="6" selection-end-line="616" selection-end-column="6" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inherits.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train2_Util/inherits.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/arango/tests.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1003">
+              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="package_json" />
+        <option value="tsconfig.json" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="HgUpdateConfigurationSettings">
+    <option name="updateType" value="MERGE" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/content/index.js" />
+        <option value="$PROJECT_DIR$/users.json" />
+        <option value="$PROJECT_DIR$/c.0.txt" />
+        <option value="$PROJECT_DIR$/files/messages-r1476305524455-1476305524555.json" />
+        <option value="$PROJECT_DIR$/content/index.html" />
+        <option value="$PROJECT_DIR$/content/style.css" />
+        <option value="$PROJECT_DIR$/files/users.json" />
+        <option value="$PROJECT_DIR$/files/rooms.json" />
+        <option value="$PROJECT_DIR$/content/script.js" />
+        <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/mongo/reset.bat" />
+        <option value="$PROJECT_DIR$/clients.bat" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/docs/structures.txt" />
+        <option value="$PROJECT_DIR$/files/logs.json" />
+        <option value="$PROJECT_DIR$/mongo/reset.js" />
+        <option value="$PROJECT_DIR$/node_modules/arangojs/lib/util/btoa.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/arango/tests.js" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/clients.js" />
+        <option value="$PROJECT_DIR$/train/index.html" />
+        <option value="$PROJECT_DIR$/awesome-test/package.json" />
+        <option value="$PROJECT_DIR$/awesome-test/index.html" />
+        <option value="$PROJECT_DIR$/awesome-test/server.js" />
+        <option value="$PROJECT_DIR$/train/ru.json" />
+        <option value="$PROJECT_DIR$/train/user.js" />
+        <option value="$PROJECT_DIR$/train/app.js" />
+        <option value="$PROJECT_DIR$/train/db/index.js" />
+        <option value="$PROJECT_DIR$/train/db/ru.json" />
+        <option value="$PROJECT_DIR$/train/server.js" />
+        <option value="$PROJECT_DIR$/train/user/index.js" />
+        <option value="$PROJECT_DIR$/train/logger.js" />
+        <option value="$PROJECT_DIR$/train1/supermodule/index.js" />
+        <option value="$PROJECT_DIR$/train1/supermodule/package.json" />
+        <option value="$PROJECT_DIR$/train2_Util/inspect.js" />
+        <option value="$PROJECT_DIR$/train2_Util/format.js" />
+        <option value="$PROJECT_DIR$/train2_Util/inherits.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBowerSettings">
+    <exe-path />
+    <config-path />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/awesome-test/node_modules" />
+    <handled-path value="$PROJECT_DIR$/train/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Node.jsJavaScript</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AngularJS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webicq" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webicq" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webicq" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="javascript.nodejs.core.library.configured.version" value="4.4.7" />
+    <property name="JavaScriptPreferStrict" value="true" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DLG\WebstormProjects\webicq\train\node_modules" />
+      <recent name="C:\Users\DLG\WebstormProjects\webicq\train\db" />
+      <recent name="C:\Users\DLG\WebstormProjects\webicq\train\user" />
+      <recent name="C:\Users\DLG\WebstormProjects\webicq\train" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.inherits.js">
+    <configuration default="false" name="inspect.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="inspect.js" working-dir="$PROJECT_DIR$/train2_Util">
+      <method />
+    </configuration>
+    <configuration default="false" name="format.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="format.js" working-dir="$PROJECT_DIR$/train2_Util">
+      <method />
+    </configuration>
+    <configuration default="false" name="inherits.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="inherits.js" working-dir="$PROJECT_DIR$/train2_Util">
+      <method />
+    </configuration>
+    <configuration default="false" name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
+      <method />
+    </configuration>
+    <configuration default="false" name="clients.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="clients.js" working-dir="$PROJECT_DIR$">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="MongoRunConfiguration" factoryName="Mongo">
+      <setting name="path" value="" />
+      <setting name="shellParams" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.inspect.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.format.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.inherits.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.server.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.clients.js" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.inherits.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.clients.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.server.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.format.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.inspect.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5e747ee-baf9-467c-bd49-c7a6a75acb17" name="Default" comment="" />
+      <created>1470516506254</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1470516506254</updated>
+      <workItem from="1470516507732" duration="796000" />
+      <workItem from="1470570203752" duration="789000" />
+      <workItem from="1471287437181" duration="3970000" />
+      <workItem from="1471292111029" duration="948000" />
+      <workItem from="1471372306219" duration="3502000" />
+      <workItem from="1471461987591" duration="989000" />
+      <workItem from="1471463130796" duration="233000" />
+      <workItem from="1471463756315" duration="30000" />
+      <workItem from="1471464233774" duration="227000" />
+      <workItem from="1471464542236" duration="658000" />
+      <workItem from="1471465320241" duration="166000" />
+      <workItem from="1471465651348" duration="157000" />
+      <workItem from="1471465841199" duration="3423000" />
+      <workItem from="1471547357424" duration="14626000" />
+      <workItem from="1471726537392" duration="2630000" />
+      <workItem from="1471787714088" duration="14254000" />
+      <workItem from="1471905422551" duration="804000" />
+      <workItem from="1471972288109" duration="17971000" />
+      <workItem from="1472149272776" duration="12809000" />
+      <workItem from="1472240501060" duration="17770000" />
+      <workItem from="1472288187595" duration="5019000" />
+      <workItem from="1472293468397" duration="17080000" />
+      <workItem from="1472342888207" duration="212000" />
+      <workItem from="1472343142979" duration="399000" />
+      <workItem from="1472343573247" duration="4017000" />
+      <workItem from="1472356886593" duration="1348000" />
+      <workItem from="1472418370938" duration="402000" />
+      <workItem from="1472418825591" duration="2363000" />
+      <workItem from="1472421788119" duration="10210000" />
+      <workItem from="1472494910534" duration="1807000" />
+      <workItem from="1472577571315" duration="16808000" />
+      <workItem from="1475963083082" duration="2109000" />
+      <workItem from="1476122877323" duration="4361000" />
+      <workItem from="1476208810453" duration="8851000" />
+      <workItem from="1476384895503" duration="10194000" />
+      <workItem from="1476477967026" duration="4655000" />
+      <workItem from="1476553509837" duration="11861000" />
+      <workItem from="1476720145441" duration="8633000" />
+      <workItem from="1476901508484" duration="3621000" />
+      <workItem from="1476981628150" duration="5669000" />
+      <workItem from="1477028835742" duration="114000" />
+      <workItem from="1477072572183" duration="7408000" />
+      <workItem from="1477426033756" duration="591000" />
+      <workItem from="1477506059825" duration="8936000" />
+      <workItem from="1477597732139" duration="4839000" />
+      <workItem from="1477687607026" duration="3162000" />
+      <workItem from="1478624945075" duration="5076000" />
+      <workItem from="1478709828615" duration="5839000" />
+      <workItem from="1478798978560" duration="2906000" />
+      <workItem from="1479056889642" duration="3186000" />
+      <workItem from="1479149167111" duration="5256000" />
+      <workItem from="1479237713117" duration="1333000" />
+      <workItem from="1479323433822" duration="2028000" />
+      <workItem from="1479407424596" duration="4123000" />
+      <workItem from="1479496952196" duration="4192000" />
+      <workItem from="1479838312512" duration="3971000" />
+      <workItem from="1479929421163" duration="697000" />
+      <workItem from="1480012064999" duration="1671000" />
+      <workItem from="1480444268610" duration="6504000" />
+      <workItem from="1480534220962" duration="4550000" />
+      <workItem from="1480958446957" duration="4570000" />
+      <workItem from="1481133595310" duration="587000" />
+      <workItem from="1481143662310" duration="106000" />
+      <workItem from="1481655594827" duration="589000" />
+      <workItem from="1483834046632" duration="101000" />
+      <workItem from="1483876493134" duration="2087000" />
+      <workItem from="1483980060276" duration="1755000" />
+      <workItem from="1483988758833" duration="1682000" />
+      <workItem from="1484073409358" duration="4376000" />
+      <workItem from="1484242367395" duration="882000" />
+      <workItem from="1485276770916" duration="603000" />
+      <workItem from="1486062284417" duration="658000" />
+      <workItem from="1492292133290" duration="3000" />
+      <workItem from="1492292555227" duration="356000" />
+      <workItem from="1496441316277" duration="5185000" />
+      <workItem from="1496779465670" duration="6000" />
+      <workItem from="1496782732587" duration="3407000" />
+      <workItem from="1496864286270" duration="745000" />
+      <workItem from="1496865131805" duration="385000" />
+      <workItem from="1496865547939" duration="2325000" />
+      <workItem from="1496867930175" duration="10788000" />
+      <workItem from="1496958548247" duration="4000" />
+      <workItem from="1496958618283" duration="8807000" />
+      <workItem from="1497049488216" duration="1121000" />
+      <workItem from="1497295582160" duration="6000" />
+      <workItem from="1497295627770" duration="24096000" />
+      <workItem from="1497553909433" duration="4558000" />
+      <workItem from="1497650186472" duration="3201000" />
+      <workItem from="1497991890438" duration="7000" />
+      <workItem from="1497992096828" duration="8805000" />
+      <workItem from="1498205007264" duration="8958000" />
+      <workItem from="1498455647628" duration="5561000" />
+      <workItem from="1498769918192" duration="3435000" />
+      <workItem from="1498815357314" duration="691000" />
+      <workItem from="1499374450101" duration="1798000" />
+      <workItem from="1499787249352" duration="4788000" />
+      <workItem from="1499976636894" duration="3496000" />
+      <workItem from="1500410149317" duration="31851000" />
+      <workItem from="1500952237189" duration="11296000" />
+      <workItem from="1501553648549" duration="6380000" />
+      <workItem from="1501641607943" duration="5685000" />
+      <workItem from="1501648833415" duration="6468000" />
+      <workItem from="1501909531368" duration="9131000" />
+      <workItem from="1502006999753" duration="5528000" />
+      <workItem from="1502160214783" duration="5417000" />
+      <workItem from="1502247502958" duration="4598000" />
+      <workItem from="1502421123197" duration="9721000" />
+      <workItem from="1503370825902" duration="3578000" />
+      <workItem from="1506797333008" duration="2021000" />
+      <workItem from="1506861693966" duration="8919000" />
+      <workItem from="1516683729063" duration="9988000" />
+      <workItem from="1517141867782" duration="24800000" />
+      <workItem from="1517601040668" duration="3879000" />
+      <workItem from="1517679637529" duration="1323000" />
+      <workItem from="1518108534910" duration="2901000" />
+      <workItem from="1551521017196" duration="181000" />
+      <workItem from="1553945303991" duration="847000" />
+      <workItem from="1553974558823" duration="856000" />
+      <workItem from="1554320640822" duration="876000" />
+    </task>
+    <task id="LOCAL-00023" summary="setRoom - появляется в списке">
+      <created>1479411759157</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1479411759157</updated>
+    </task>
+    <task id="LOCAL-00024" summary="setRoom - пытаюсь сделать чтобы созданные комнаты появлялись в списке при залогинивании... ошибка какая-то, не пойму почему">
+      <created>1479503759803</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1479503759803</updated>
+    </task>
+    <task id="LOCAL-00025" summary="setRoom - созданные комнаты появляются в списке при залогинивании">
+      <created>1479846743109</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1479846743109</updated>
+    </task>
+    <task id="LOCAL-00026" summary="комната - создаются, удаляются админом&#10;не рефрешается после удаления - сделать&#10;">
+      <created>1480451248022</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1480451248022</updated>
+    </task>
+    <task id="LOCAL-00027" summary="комната - не рефрешается после удаления - сделать чатАктивэйт&#10;">
+      <created>1480539835125</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1480539835125</updated>
+    </task>
+    <task id="LOCAL-00028" summary="комната - 1) не рефрешается после удаления - сделать чатАктивэйт&#10;2) Как сделать список пиров для добавления?">
+      <created>1480964524950</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1480964524951</updated>
+    </task>
+    <task id="LOCAL-00029" summary="рефреш + дяди Митин мультитул инструмент swissknife.js в mongo -&gt; reset.js">
+      <created>1496447470472</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1496447470472</updated>
+    </task>
+    <task id="LOCAL-00030" summary="создание комнаты с пирами в mongodb">
+      <created>1496877557906</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1496877557906</updated>
+    </task>
+    <task id="LOCAL-00031" summary="создание комнаты с пирами олдПирами в mongodb">
+      <created>1496878207433</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1496878207433</updated>
+    </task>
+    <task id="LOCAL-00032" summary="создание комнаты с пирами олдПирами в mongodb &#10;and clients stars in webstorm">
+      <created>1496879805983</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1496879805983</updated>
+    </task>
+    <task id="LOCAL-00033" summary="u0000x и их опять трое">
+      <created>1496960390717</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1496960390717</updated>
+    </task>
+    <task id="LOCAL-00034" summary="u0000x и их опять трое&#10;правильный вариант">
+      <created>1496962571748</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1496962571748</updated>
+    </task>
+    <task id="LOCAL-00035" summary="юзеры получаю сообщения">
+      <created>1496966922483</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1496966922483</updated>
+    </task>
+    <task id="LOCAL-00036" summary="multiUsers-rooms промежуточный результат">
+      <created>1497308995874</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1497308995874</updated>
+    </task>
+    <task id="LOCAL-00037" summary="multiUsers-rooms - сделал скелет, пока без сообщений">
+      <created>1497391822436</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1497391822436</updated>
+    </task>
+    <task id="LOCAL-00038" summary="разобраться с rid[0] = r/u">
+      <created>1497475748333</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1497475748343</updated>
+    </task>
+    <task id="LOCAL-00039" summary="комменты только">
+      <created>1497562230838</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1497562230838</updated>
+    </task>
+    <task id="LOCAL-00040" summary="пытаюсь настроить клиентскую часть на работу с мультирумс">
+      <created>1497652437311</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1497652437311</updated>
+    </task>
+    <task id="LOCAL-00041" summary="доделал серверную в wsRecvRoom">
+      <created>1498772944591</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1498772944591</updated>
+    </task>
+    <task id="LOCAL-00042" summary="промежуточно - на автоматической клиентской части делаю мультирум">
+      <created>1499809470815</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1499809470815</updated>
+    </task>
+    <task id="LOCAL-00043" summary="промежуточно2 - на автоматической клиентской части делаю мультирум">
+      <created>1499979587388</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1499979587388</updated>
+    </task>
+    <task id="LOCAL-00044" summary="сделал основную часть автоматического клиента по мультируму">
+      <created>1500418124289</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1500418124289</updated>
+    </task>
+    <task id="LOCAL-00045" summary="multiroom on client-side: error on server">
+      <created>1500420876308</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1500420876308</updated>
+    </task>
+    <task id="LOCAL-00046" summary="multiroom on client-side: 3rd version&#10;еще не подгружается список комнат когда join">
+      <created>1500607968384</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1500607968384</updated>
+    </task>
+    <task id="LOCAL-00047" summary="multiroom on client-side: 3rd version&#10;список комнат когда join">
+      <created>1500608930566</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1500608930566</updated>
+    </task>
+    <task id="LOCAL-00048" summary="multiroom on client-side: 3rd version&#10;список комнат когда join2">
+      <created>1500610721248</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1500610721248</updated>
+    </task>
+    <task id="LOCAL-00049" summary="multiroom on client-side: 3rd version&#10;список комнат когда join, на клиенте не принимает">
+      <created>1500611910454</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1500611910454</updated>
+    </task>
+    <task id="LOCAL-00050" summary="multiroom on client-side: 3rd version&#10;ошибка на сервере&#10;C:\Users\DLG\WebstormProjects\webicq\server.js:455&#10;db.rooms[rid]   .   invited.forEach( function(i) {">
+      <created>1500673164873</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1500673164874</updated>
+    </task>
+    <task id="LOCAL-00051" summary="multiroom on client-side: 3rd version&#10;ошибка на сервере + логи действий с БД в процессе">
+      <created>1500957068768</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1500957068768</updated>
+    </task>
+    <task id="LOCAL-00052" summary="multiroom on client-side: 3rd version&#10;ошибка на сервере + логи действий с БД в процессе2">
+      <created>1501038064579</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1501038064579</updated>
+    </task>
+    <task id="LOCAL-00053" summary="multiroom on client-side: 3rd version&#10;ошибка на сервере + логи действий с БД в процессе3">
+      <created>1501043949413</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1501043949413</updated>
+    </task>
+    <task id="LOCAL-00054" summary="multiroom on client-side: 3rd version&#10;ошибка на сервере + логи действий с БД в процессе4">
+      <created>1501045566061</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1501045566061</updated>
+    </task>
+    <task id="LOCAL-00055" summary="multiroom: ошибка на сервере + логи действий с БД в процессе&#10;arango&#10;">
+      <created>1501559200194</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1501559200194</updated>
+    </task>
+    <task id="LOCAL-00056" summary="multiroom: ошибка на сервере + логи действий с БД в процессе&#10;arango ошибка&#10;">
+      <created>1501644484636</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1501644484637</updated>
+    </task>
+    <task id="LOCAL-00057" summary="multiroom: ошибка на сервере + логи действий с БД в процессе&#10;arango ошибка2&#10;">
+      <created>1501916051887</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1501916051887</updated>
+    </task>
+    <task id="LOCAL-00058" summary="multiroom: ошибка на сервере + логи действий с БД в процессе&#10;arango graphs">
+      <created>1502161923125</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1502161923126</updated>
+    </task>
+    <task id="LOCAL-00059" summary="multiroom: ошибка на сервере + логи действий с БД в процессе&#10;arango graphs2">
+      <created>1502166397436</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1502166397436</updated>
+    </task>
+    <task id="LOCAL-00060" summary="multiroom: ошибка на сервере + логи действий с БД в процессе&#10;arango graphs3">
+      <created>1502167653324</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1502167653324</updated>
+    </task>
+    <task id="LOCAL-00061" summary="multiroom: ошибка на сервере + логи действий с БД в процессе&#10;arango guery">
+      <created>1502254206798</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1502254206798</updated>
+    </task>
+    <task id="LOCAL-00062" summary="multiroom: ошибка на сервере + логи действий с БД в процессе&#10;arango делаем подложку для разных БД">
+      <created>1502772119295</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1502772119313</updated>
+    </task>
+    <task id="LOCAL-00063" summary="multiroom: ошибка на сервере + логи действий с БД в процессе&#10;arango делаем подложку для разных БД2">
+      <created>1503376281242</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1503376281243</updated>
+    </task>
+    <task id="LOCAL-00064" summary="multiroom: ошибка на сервере&#10;не работает функция wcRoomSync">
+      <created>1506875539808</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1506875539859</updated>
+    </task>
+    <task id="LOCAL-00065" summary="multiroom: ошибка на сервере&#10;не работает функция wcRoomSync&#10;и не работают действия с комнатами в тестировании, может проблема в wcRoomSync?">
+      <created>1516898276373</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1516898276373</updated>
+    </task>
+    <task id="LOCAL-00066" summary="_учусь делать простейший сервер">
+      <created>1517149609515</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1517149609515</updated>
+    </task>
+    <task id="LOCAL-00067" summary="_учусь делать простейший сервер">
+      <created>1517343634451</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1517343634451</updated>
+    </task>
+    <task id="LOCAL-00068" summary="_учусь делать простейший сервер (пока прохожу некоторые уроки)">
+      <created>1517516293769</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1517516293769</updated>
+    </task>
+    <task id="LOCAL-00069" summary="_учусь делать простейший сервер (пока прохожу некоторые уроки)">
+      <created>1517553228825</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1517553228825</updated>
+    </task>
+    <task id="LOCAL-00070" summary="_учусь делать простейший сервер (пока прохожу некоторые уроки)">
+      <created>1517604014868</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1517604014869</updated>
+    </task>
+    <task id="LOCAL-00071" summary="test">
+      <created>1554320727543</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1554320727543</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="569525000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14136904" sideWeight="0.49242425" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33788395" sideWeight="0.51785713" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31175467" sideWeight="0.48214287" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35153583" sideWeight="0.8489583" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.4828496" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1845238" sideWeight="0.50757575" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20136519" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1845238" sideWeight="0.47493404" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993174" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32764506" sideWeight="0.48511904" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5546075" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="сделал основную часть автоматического клиента по мультируму" />
+    <MESSAGE value="multiroom on client-side: error on server" />
+    <MESSAGE value="multiroom on client-side: 3rd version&#10;еще не подгружается список комнат когда join" />
+    <MESSAGE value="multiroom on client-side: 3rd version&#10;список комнат когда join" />
+    <MESSAGE value="multiroom on client-side: 3rd version&#10;список комнат когда join2" />
+    <MESSAGE value="multiroom on client-side: 3rd version&#10;список комнат когда join, на клиенте не принимает" />
+    <MESSAGE value="multiroom on client-side: 3rd version&#10;ошибка на сервере&#10;C:\Users\DLG\WebstormProjects\webicq\server.js:455&#10;db.rooms[rid]   .   invited.forEach( function(i) {" />
+    <MESSAGE value="multiroom on client-side: 3rd version&#10;ошибка на сервере + логи действий с БД в процессе" />
+    <MESSAGE value="multiroom on client-side: 3rd version&#10;ошибка на сервере + логи действий с БД в процессе2" />
+    <MESSAGE value="multiroom on client-side: 3rd version&#10;ошибка на сервере + логи действий с БД в процессе3" />
+    <MESSAGE value="multiroom on client-side: 3rd version&#10;ошибка на сервере + логи действий с БД в процессе4" />
+    <MESSAGE value="multiroom: ошибка на сервере + логи действий с БД в процессе&#10;arango&#10;" />
+    <MESSAGE value="multiroom: ошибка на сервере + логи действий с БД в процессе&#10;arango ошибка&#10;" />
+    <MESSAGE value="multiroom: ошибка на сервере + логи действий с БД в процессе&#10;arango ошибка2&#10;" />
+    <MESSAGE value="multiroom: ошибка на сервере + логи действий с БД в процессе&#10;arango graphs" />
+    <MESSAGE value="multiroom: ошибка на сервере + логи действий с БД в процессе&#10;arango graphs2" />
+    <MESSAGE value="multiroom: ошибка на сервере + логи действий с БД в процессе&#10;arango graphs3" />
+    <MESSAGE value="multiroom: ошибка на сервере + логи действий с БД в процессе&#10;arango guery" />
+    <MESSAGE value="multiroom: ошибка на сервере + логи действий с БД в процессе&#10;arango делаем подложку для разных БД" />
+    <MESSAGE value="multiroom: ошибка на сервере + логи действий с БД в процессе&#10;arango делаем подложку для разных БД2" />
+    <MESSAGE value="multiroom: ошибка на сервере&#10;не работает функция wcRoomSync" />
+    <MESSAGE value="multiroom: ошибка на сервере&#10;не работает функция wcRoomSync&#10;и не работают действия с комнатами в тестировании, может проблема в wcRoomSync?" />
+    <MESSAGE value="_учусь делать простейший сервер" />
+    <MESSAGE value="_учусь делать простейший сервер (пока прохожу некоторые уроки)" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/content/script.js</url>
+          <line>276</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/index.js</url>
+          <line>228</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/content/script.js</url>
+          <line>561</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/content/script.js</url>
+          <line>411</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="17" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/node_modules/mongodb/lib/collection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="2337" column="0" selection-start-line="2337" selection-start-column="0" selection-end-line="2337" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongo/start.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clients.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/messages-r111-123.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongodb/lib/mongo_client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="223" column="0" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/users.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongo/reset.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/logs.json" />
+    <entry file="file://$PROJECT_DIR$/files/rooms.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/arangojs/lib/util/request.node.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/arangojs/lib/database.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/arangojs/lib/connection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="77" column="75" selection-start-line="77" selection-start-column="75" selection-end-line="77" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/arangojs/lib/util/btoa.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/arangojs/lib/error.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/arangojs/lib/collection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongo/reset.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/structures.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/filestorage.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clients.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4029">
+          <caret line="237" column="32" selection-start-line="237" selection-start-column="24" selection-end-line="237" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10404">
+          <caret line="612" column="43" selection-start-line="612" selection-start-column="43" selection-end-line="612" selection-end-column="43" />
+          <folding>
+            <marker date="1480963524341" expanded="true" signature="1863:1915" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awesome-test/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awesome-test/node_modules/express/lib/middleware/init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-284">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awesome-test/node_modules/express/lib/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="415" column="42" selection-start-line="415" selection-start-column="38" selection-end-line="415" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awesome-test/node_modules/express/lib/router/layer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awesome-test/node_modules/express/lib/middleware/query.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-352">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awesome-test/node_modules/express/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awesome-test/node_modules/express/lib/router/route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="142" column="28" selection-start-line="142" selection-start-column="25" selection-end-line="142" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awesome-test/node_modules/express/lib/express.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1479">
+          <caret line="87" column="15" selection-start-line="87" selection-start-column="15" selection-end-line="87" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train/package.json" />
+    <entry file="file://$PROJECT_DIR$/train/tsconfig.json" />
+    <entry file="file://$PROJECT_DIR$/awesome-test/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train/node_modules/db/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train/node_modules/db/ru.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train/user/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train1/supermodule/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train1/supermodule/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train/logger.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awesome-test/node_modules/express/lib/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10370">
+          <caret line="616" column="6" selection-start-line="616" selection-start-column="6" selection-end-line="616" selection-end-column="6" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train2_Util/inspect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="91" selection-start-line="13" selection-start-column="91" selection-end-line="13" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train2_Util/format.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="187">
+            <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train2_Util/inherits.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arango/tests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awesome-test/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.hgignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="71" column="12" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="hg4idea.settings">
+    <option name="CHECK_INCOMING_OUTGOING" value="false" />
+    <option name="RECENT_HG_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+</project>

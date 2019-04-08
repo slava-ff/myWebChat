@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            My 1st chat
+        </title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+
+    <body>
+        <div id="divLogReg">
+            User name:<br>
+            <input id="txtLoginName" type="text" class="logReg" autofocus/>
+            <br>
+            Password:<br>
+            <input id="txtPassword1" type="password" class="logReg"/>
+            <button id="btnLogin" type="reset" class="logReg">Login</button>
+            <br>
+            <br>
+            To register - enter password again and press "Register":<br>
+            <input id="txtPassword2" type="password"/>
+            <button id="btnRegister" type="reset" class="logReg">Register</button>
+        </div>
+        <div id="divChat">
+            <div id="divSide">
+                <div id="divName">
+                    My name:<br/>
+                    <input type="text" id="txtName">
+                </div>
+                <div id="divList">Users:
+                </div>
+            </div>
+            <div id="divMain">
+                <div id="divText"></div>
+                <div id="divInput">
+                    <textarea id="myText" rows="3"></textarea>
+                    <input id="btnSubmit" type="submit">
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="/script.js"></script>
+    </body>
+</html>
+

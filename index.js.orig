@@ -1,0 +1,182 @@
+"use strict";
+
+var fs = require('fs');
+var url = require('url');
+var http = require('http');
+var crypto = require('crypto');
+
+var port = 8080;
+
+var hash = null;
+setInterval(function () {
+    var s = crypto.createHash('sha256').update(
+        fs.readFileSync("index.js").toString()
+    ).digest("hex");
+    if (!!hash && hash !== s) process.exit(0);
+    hash = s;
+}, 1000);
+
+var server = http.createServer(function (request, response) {
+    //console.log("request url: ", request.url);
+    var tmp = request.url;
+    while (tmp.indexOf("..") > -1) tmp = tmp.replace("..",  "");
+    while (tmp.indexOf("//") > -1) tmp = tmp.replace("//", "/");
+    tmp = url.parse(tmp, true, true);
+    //console.log("parsed url: ", tmp);
+    var filename = tmp.pathname;
+    if (filename == "/") filename = "/index.html";
+    filename = "content" + filename;
+    //console.log(filename);
+    fs.readFile(filename,
+        function(error, filecontent) {
+            if (error) {
+                response.writeHead(404);
+                response.end("we do not have that file");
+                return;
+            }
+            var headers = {};
+            headers["Content-Type"] = "text/html";
+            var extname = filename.split('.').pop();
+            switch (extname) {
+                case 'htm' : headers["Content-Type"] = 'text/html'                ; headers["Expires"] = "Mon, 1 Apr 2000 00:00:00 GMT"; break;
+                case 'js'  : headers["Content-Type"] = 'text/javascript'          ; headers["Expires"] = "Mon, 1 Apr 2000 00:00:00 GMT"; break;
+                case 'css' : headers["Content-Type"] = 'text/css'                 ; headers["Expires"] = "Mon, 1 Apr 2000 00:00:00 GMT"; break;
+                case 'json': headers["Content-Type"] = 'application/json'         ; headers["Expires"] = "Mon, 1 Apr 2000 00:00:00 GMT"; break;
+                case 'png' : headers["Content-Type"] = 'image/png'                ; headers["Expires"] = "Mon, 1 Apr 2016 00:00:00 GMT"; break;
+                case 'jpg' : headers["Content-Type"] = 'image/jpg'                ; headers["Expires"] = "Mon, 1 Apr 2016 00:00:00 GMT"; break;
+                case 'wav' : headers["Content-Type"] = 'audio/wav'                ; headers["Expires"] = "Mon, 1 Apr 2016 00:00:00 GMT"; break;
+                case 'zip' : headers["Content-Type"] = 'application/octet-stream' ; headers["Expires"] = "Mon, 1 Apr 2000 00:00:00 GMT"; break;
+
+            }
+            response.writeHead(200, headers);
+            response.end(filecontent);
+        }
+    );
+
+}).listen(port);
+
+console.log("listening on localhost:"  +port + " ...");
+
+var clients = {};
+
+var WebSocketServer = require('websocket').server;
+var wsServer = new WebSocketServer({httpServer: server});
+
+var users = JSON.parse(fs.readFileSync("users.json").toString());
+function usersCheck (name, pass) {
+    var user = null;
+    var uids = Object.keys(users);
+    uids.forEach(function (uid) { //uid: a single user id
+        if (name == users[uid].name && pass == users[uid].pass) {
+            user = users[uid];
+        }
+    });
+    return user;
+}
+
+
+var messages = [];
+
+
+wsServer.on('request', function(r){
+    var conn = r.accept('mylovelyproto', r.origin); // r.accept = подтверждение соедениения??; dа. а r.origin?
+    var id = Date.now();
+    console.log("id:", id);
+    clients[id] = {user: null, conn: conn};
+    //console.log("clients[id]", clients[id]);
+    //console.log("clients", clients);
+
+    conn.on('message', function(message) { // = когда любой юзер
+        var str = message.utf8Data; // prosto container/string
+        console.log("recv: ", str);
+
+        var cids = Object.keys(clients); //вытаскиевает ключи клиентов (не юзеров), cids = clients ids
+        console.log("cids", cids);
+
+
+        var msg = JSON.parse(str);          //строка стала объектом
+        switch(msg.type) {                  // языковая вместо if-else
+            case "check":
+                var user = usersCheck (msg.uname, msg.pass1);
+                if (!user && msg.pass2) {
+                    user = {
+                        id: "u" + Date.now(),
+                        name: msg.uname,
+                        pass: msg.pass2,
+                        status: "online"
+                    };
+                    users[user.id] = user;
+                    fs.writeFileSync("users.json", JSON.stringify(users, null, 4));
+                }
+                clients[id].user = user;
+                conn.sendUTF(JSON.stringify({type: "check", user: user}));
+                if (user) {
+                    // generate users' messages about others to me
+                    var uids = Object.keys(users);
+                    uids.forEach(function (uid) { //uid: a single user id
+                        if (uid == user.id) return;
+                        var msg = {
+                            type: "user",
+                            user: users[uid]
+                        };
+                        conn.sendUTF(JSON.stringify(msg));
+                    });
+                    // GENERATE user messages about me to others
+                    cids.forEach(function (cid) {
+                        if (cid == id) return;
+                        var msg = {
+                            type: "user",
+                            user: user
+                        };
+                        clients[cid].conn.sendUTF(JSON.stringify(msg));
+                    });
+                    //send all messages for all users (online & offline)
+                    messages.forEach(function (msg) {
+                        conn.sendUTF(JSON.stringify(msg));
+                    });
+                }
+                break;
+            case "user":
+                // update user in list of all users
+                users[msg.user.id] = msg.user;
+                console.log("users: ", users);
+                //update user locally
+                clients[id].user = msg.user;
+                cids.forEach(function (cid) {
+                    if (cid == id) return;
+                    clients[cid].conn.sendUTF(JSON.stringify(msg));
+                });
+                fs.writeFileSync("users.json", JSON.stringify(users, null, 4));
+                break; //exit from swicth, ставить чтоб не пошел дальше по функции
+            case "text":
+                messages.push(msg);
+                console.log("messages", messages);
+                cids.forEach(function (cid) {
+                    //if (cid == id) return;
+                    clients[cid].conn.sendUTF(JSON.stringify(msg));
+                });
+                break;
+            default:
+                console.error("unknown message type");
+        }
+
+    });
+
+    conn.on('close', function(reasonCode, description) {
+        var user = clients[id].user;
+        if (!user) return;
+        user.status = "offline";
+        delete clients[id];
+        var msg = {type:"user", user: user};
+        var cids = Object.keys(clients);
+        cids.forEach(function (cid) {
+            var client = clients[cid];
+            client.conn.sendUTF(JSON.stringify(msg));
+        });
+    });
+
+
+
+});
+
+

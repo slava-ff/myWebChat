@@ -1,0 +1,3 @@
+rs.initiate();
+db.shutdownServer();
+

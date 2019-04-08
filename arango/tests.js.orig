@@ -1,0 +1,131 @@
+"use strict";
+
+var arangojs = require('arangojs');
+
+var adb = new arangojs.Database({
+    url: "https://root:pass@slava.dnset.com",
+    databaseName: "TEST"
+});
+
+adb.collections(function(err, res){
+    if (err) throw err;
+    var dbs = {};
+    res.forEach(function(v){dbs[v.name] = v});
+    continueWithMappedCollections(dbs);
+});
+//
+// function continueWithMappedCollections(db) {
+//     console.log(Object.keys(db));
+//
+//     var r1 = {
+//         id: Date.now(),
+//         name: 'r1'
+//     };
+//
+//     var u1 = {
+//         id: Date.now(),
+//         uname: 'u1',
+//         passw: 'u1',
+//         status: 'offline',
+//         rooms:[]
+//     };
+//     db.rooms.save(r1).then(
+//         function r1Ok ( meta) {
+//             console.log('Room saved:', meta._rev);
+//             r1._key = meta._key;
+//             db.users.save(u1).then(
+//                 function u1Ok ( meta) {
+//                     console.log('Document saved:', meta._rev);
+//                     u1._key = meta._key;
+//                     //
+//                 },
+//                 function (err) { console.error('Failed to save document:', err)}
+//             );
+//         },
+//         function (err) { console.error('Failed to save room:', err)}
+//     );
+// }
+
+
+
+// function continueWithMappedCollections(db) {
+//     console.log(Object.keys(db));
+//     Promise.all([
+//         db.u.document("u2"),
+//         db.r.document("r123")
+//     ]).then(function (results) {
+//         var x = results[0];
+//         var y = results[1];
+//         var m = db.edgeCollection('m');
+//         return m.save({_from: x, _to: y, msg: 'TEST_webstorm'});
+//     })
+//     .then(function (meta) {
+//         console.log(meta);
+//     });
+// }
+
+
+function continueWithMappedCollections(db) {
+    var msg = {msg: 'TEST_webstorm'};
+    db.m.save(
+        msg,
+        db.u.document("u2"),
+        db.r.document("r123")
+);
+
+
+    // console.log(Object.keys(db));
+    // Promise.all([
+    //     db.u.document("u2"),
+    //     db.r.document("r123")
+    // ]).then(function (results) {
+    //     var x = results[0];
+    //     var y = results[1];
+    //     var m = db.edgeCollection('m');
+    //     return m.save({_from: x, _to: y, msg: 'TEST_webstorm'});
+    // })
+    //     .then(function (meta) {
+    //         console.log(meta);
+    //     });
+}
+
+
+// db.users.update(meta._key, {d: 'qux'}).then(
+//     function u1UpdateOk ( meta) { console.log('Document saved:', meta._rev)},
+//     function (err) { console.error('Failed to save document:', err)}
+// );
+
+
+//var users = adb.collection('users');
+
+
+
+
+//function addUserToDb ()
+
+// tvoe
+// var arangojs = require('arangojs');
+//
+//
+// var db = new arangojs.Database({
+//     url: "https://test:pass@slava.dnset.com",
+//     databaseName: "TEST"
+// });
+//
+// var messages = db.collection('messages');
+// var doc = {
+//     _key: 'doc1',
+//     a: 'foo',
+//     b: 'bar',
+//     c: Date.now()
+// };
+// messages.save(doc).then(
+//     function( meta) {
+//         console.log('Document saved:', meta._rev);
+//         messages.update('doc1', {d: 'qux'}).then(
+//             function( meta) { console.log('Document saved:', meta._rev)},
+//             function (err) { console.error('Failed to save document:', err)}
+//         );
+//     },
+//     function (err) { console.error('Failed to save document:', err)}
+// );

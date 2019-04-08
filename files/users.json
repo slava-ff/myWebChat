@@ -1,0 +1,27 @@
+{
+    "u1484074619449": {
+        "id": "u1484074619449",
+        "name": "u0",
+        "pass": "u0",
+        "status": "online",
+        "peers": {},
+        "rooms": {}
+    },
+    "u1484074620313": {
+        "id": "u1484074620313",
+        "name": "u2",
+        "pass": "u2",
+        "status": "online",
+        "peers": {},
+        "rooms": {}
+    },
+    "u1484074621658": {
+        "id": "u1484074621658",
+        "name": "u1",
+        "pass": "u1",
+        "status": "online",
+        "peers": {},
+        "rooms": {},
+        "reg": true
+    }
+}

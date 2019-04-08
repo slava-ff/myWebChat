@@ -1,0 +1,535 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    /*user-select: none;*/
+    /*-moz-user-select: none;*/
+    /*-webkit-user-select: none;*/
+}
+html, body {
+    background-color: #666699;
+    color: white;
+
+}
+
+#divLogReg {
+    position: absolute;
+    left: 35%;
+    top: 30%;
+}
+#divLogReg .logReg {
+    width: 100%;
+    background-color: aliceblue;
+    border-radius: 4px;
+    padding: 2px;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 1px;
+}
+#divLogReg .logReg:focus {
+    background-color: #ffffcc;
+}
+#divLogReg .logRegBtn {
+    width: 100%;
+    border-radius: 4px;
+    padding: 6px;
+    outline: none;
+    margin-top: 4px;
+    cursor: pointer;
+    background-color: #595959;
+    color: white;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    border: 1px solid #404040;
+}
+#divLogReg .logRegBtn:hover {
+    background-color: #4CAF50;
+    border: 1px solid #275929;
+
+}
+#divLogReg .logRegBtn:active {
+    background-color: #3e8e41;
+}
+
+#divMain {
+    display: none;
+}
+#divMain.active {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    flex-flow: row nowrap;
+}
+#divMain #divSide {
+    flex: 0 0 auto;
+    width: 21%;
+    padding: 4px;
+    background: #aaa;
+}
+/*button.accordion {*/
+    /*background-color: #eee;*/
+    /*color: #444;*/
+    /*cursor: pointer;*/
+    /*padding: 18px;*/
+    /*width: 100%;*/
+    /*border: none;*/
+    /*text-align: left;*/
+    /*outline: none;*/
+    /*font-size: 15px;*/
+    /*transition: 0.4s;*/
+/*}*/
+
+/*button.accordion.active, button.accordion:hover {*/
+    /*background-color: #ddd;*/
+/*}*/
+
+/*div.panel {*/
+    /*padding: 0 18px;*/
+    /*background-color: white;*/
+    /*max-height: 0;*/
+    /*overflow: hidden;*/
+    /*transition: 0.6s ease-in-out;*/
+    /*opacity: 0;*/
+/*}*/
+
+/*div.panel.show {*/
+    /*opacity: 1;*/
+    /*max-height: 500px;*/
+/*}*/
+#divMain #divSide #btnLogout {
+    width: 100%;
+    border-radius: 4px;
+    padding: 6px;
+    outline: none;
+    margin-top: 4px;
+    cursor: pointer;
+    background-color: #595959;
+    color: white;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    border: 1px solid #404040;
+}
+#divMain #divSide #btnLogout:hover {
+    background-color: #ff0000;
+    border: 1px solid #990000;
+
+}
+#divMain #divSide #btnLogout:active {
+    background-color: #990000;
+}
+#divMain #divSide #btnMyInfo {
+    width: 100%;
+    border-radius: 4px;
+    padding: 6px;
+    outline: none;
+    margin-top: 4px;
+    cursor: pointer;
+    color: white;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    background-color: #49a0ea;
+    /*padding: 4px;*/
+    border: 1px solid #2c6a97;
+    /*font-size: medium;*/
+    /*font-weight: bold;*/
+}
+#divMain #divSide #btnMyInfo:hover {
+    background-color: #3d85c3;
+    border: 1px solid #225376;
+}
+#divMain #divSide #btnMyInfo:active {
+    background-color: #225376;
+    border: 1px solid #17374e;
+    color: white;
+}
+#divMain #divSide #divName {
+    margin-top: 4px;
+}
+#divMain #divSide #divName #txtName {
+    width: 100%;
+    background-color: aliceblue;
+    border-radius: 4px;
+    padding: 2px;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 1px;
+}
+#divMain #divSide #divName #txtName:focus {
+    background-color: #ffffcc;
+}
+#divMain #divSide #divStatus #selectStatus {
+    width: 100%;
+    background-color: aliceblue;
+    border-radius: 4px;
+    padding: 2px;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 1px;
+    cursor: pointer;
+}
+#divMain #divSide #divStatus #selectStatus:focus {
+    background-color: #ffffcc;
+}
+#divMain #divSide .txtURSearchVisible {
+    width: 100%;
+    background-color: aliceblue;
+    /*background-image: url('icon-search.png');*/
+    /*background-size: 13px 13px;*/
+    /*background-repeat: no-repeat;*/
+    border-radius: 4px;
+    padding: 2px;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 1px;
+    display: none;
+}
+#divMain #divSide .txtURSearchVisible.active {
+    display: block;
+}
+#divMain #divSide #txtURSearch:focus {
+    background-color: #ffffcc;
+}
+#divMain #divSide .btn1 {
+    display: none;
+    width: 35%;
+    border-radius: 4px;
+    padding: 6px;
+    outline: none;
+    margin-top: 4px;
+    cursor: pointer;
+    color: white;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    background-color: #65616a;
+    /*padding: 4px;*/
+    border: 1px solid #3c413f;
+}
+#divMain #divSide .btn1.active {
+    display: block;
+}
+#divMain #divSide .txtRName {
+    width: 100%;
+    background-color: aliceblue;
+    /*background-image: url('icon-search.png');*/
+    /*background-size: 13px 13px;*/
+    /*background-repeat: no-repeat;*/
+    border-radius: 4px;
+    padding: 2px;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 3px;
+    display: none;
+}
+#divMain #divSide .txtRName.active {
+    display: block;
+}
+#divMain #divSide .txtRName.active:focus {
+    background-color: #ffffcc;
+}
+
+#divMain #divSide .divListVisible {
+    flex: 1 1 auto;
+    overflow: auto;
+    background: #bbb;
+    border-radius: 4px;
+    padding: 2px;
+    margin-top: 4px;
+    display: none;
+    /*transition: 1.5s;*/
+}
+#divMain #divSide .divListVisible.active {
+    display: block;
+}
+#divMain #divSide #divList .divItem {
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: small;
+    cursor: pointer;
+}
+#divMain #divSide #divList .divItem {
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: small;
+    cursor: pointer;
+}
+#divMain #divSide #divList .divItem:hover {
+    font-weight: bold;
+    background: #cccccc;
+    /*font-size: 17px;*/
+}
+#divMain #divSide #divList .divItem.online {
+    color: darkgreen;
+}
+#divMain #divSide #divList .divItem.offline {
+    color: darkred;
+}
+#divMain #divSide #divList .divItem.away {
+    color: darkred;
+}
+#divMain #divSide #divList .divItem .imgStatus {
+    flex: 0 0 auto;
+    width: 10px;
+    height: 10px;
+}
+#divMain #divSide #divList .divItem .divName {
+    flex: 1 1 auto;
+    overflow: hidden;
+}
+#divMain #divSide #divList .divItem .divInfo {
+    flex: 0 0 auto;
+    overflow: hidden;
+    /*vertical-align: middle; Как выравнять текст по вертикали - по середине?*/
+}
+
+
+/* ====================  внизу  ======================*/
+
+#divMain #divSide #divSearchList .divItem {
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: small;
+    cursor: pointer;
+}
+#divMain #divSide #divSearchList .divItem:hover {
+    font-weight: bold;
+    background: #cccccc;
+    /*font-size: 17px;*/
+}
+#divMain #divSide #divSearchList .divItem.online {
+    color: darkgreen;
+}
+#divMain #divSide #divSearchList .divItem.offline {
+    color: darkred;
+}
+#divMain #divSide #divSearchList .divItem.away {
+    color: darkred;
+}
+#divMain #divSide #divSearchList .divItem .imgStatus {
+    flex: 0 0 auto;
+    width: 10px;
+    height: 10px;
+}
+#divMain #divSide #divSearchList .divItem .divName {
+    flex: 1 1 auto;
+    overflow: hidden;
+}
+#divMain #divSide #divSearchList .divItem .divInfo {
+    flex: 0 0 auto;
+    overflow: hidden;
+    background-color: #cccccc;
+    /*vertical-align: middle; Как выравнять текст по вертикали - по середине?*/
+}
+
+/* ====================  вверху  ======================*/
+
+#divMain #divMyInfo {
+    display: none;
+}
+#divMain #divMyInfo.active {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column;
+}
+#divMain #divMyInfo .divInfo {
+    flex: 0 0 auto;
+    overflow: auto;
+    width: 100%;
+    color: #b3b3b3;
+    background-color: #494949;
+    padding: 0.3% 0.3% 0.1% 1.5%;
+}
+#divMain #divMyInfo .divUser {
+    flex: 1 1 auto;
+    overflow: auto;
+    width: 100%;
+    color: white;
+    background-color: rgb(77, 77, 77);
+    padding: 1.5%;
+    display: block;
+}
+
+#divMain #divMyInfo .divUser .divUserInfo {
+    display: inline-block;
+
+}
+#divMain #divMyInfo .divUser .divUserInfo .label{
+    color: #c6c6c6;
+}
+#divMain #divMyInfo .divUser .divUserInfo .dataIsnt{
+    color: #61aaff;
+}
+#divMain #divMyInfo .divUser .divUserInfo .dataIsnt:hover{
+    color: #ffffff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+a {
+    color: #CC0000;
+}
+a:link {
+    color: #CC0000;
+}
+a:visited {
+    color: #999999;
+}
+a:hover {
+    color: #FF3300;
+}
+
+#divChats {
+    display: none;
+}
+#divChats.active {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column;
+}
+
+#divChats .divChat {
+    display: none;
+}
+#divChats .divChat.active {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column;
+}
+#divChats .divChat .divInfo {
+    flex: 0 0 auto;
+    overflow: auto;
+    width: 100%;
+    color: #b3b3b3;
+    background-color: #494949;
+    padding: 0.3% 0.3% 0.1% 1.5%;
+}
+
+#divChats .divChat .divInfo .btnInfo {
+    width: 80px;
+    border-radius: 4px;
+    padding: 6px;
+    float: right;
+    outline: none;
+    margin: 4px 20px 4px 4px;
+    cursor: pointer;
+    background-color: #595959;
+    color: white;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    border: 1px solid #404040;
+}
+#divChats .divChat .divInfo .btnInfo:hover {
+    background-color: #5592ff;
+    border: 1px solid #396fb7;
+
+}
+#divChats .divChat .divInfo .btnInfo:active {
+    background-color: #3f7fcf;
+}
+
+#divChats .divChat .divConv {
+    display: none;
+}
+#divChats .divChat .divConv.active {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column;
+}
+
+#divChats .divChat .divConv .divText {
+    flex: 1 1 auto;
+    overflow: auto;
+    width: 100%;
+    color: white;
+    background-color: rgb(43,43,43);
+    padding: 1.5%;
+}
+
+#divChats .divChat .divConv .divInput {
+    flex: 0 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+}
+#divChats .divChat .divConv .divInput .txtInput {
+    flex: 1 1 auto;
+    padding: 1%;
+    font-size: 16px;
+    resize: none;
+    border: 2px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+#divChats .divChat .divConv .divInput .txtInput:focus {
+    border: 2px solid #555;
+}
+#divChats .divChat .divConv .divInput #btnInput {
+    flex: 0 0 auto;
+    width: 10%;
+    min-width: 80px;
+    cursor: pointer;
+    background-color: #666666;
+    color: white;
+    outline: none;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    font-size: 20px;
+}
+#divChats .divChat .divConv .divInput #btnInput:hover {
+    background-color: #4CAF50;
+}
+#divChats .divChat .divConv .divInput #btnInput:active {
+    background-color: #3e8e41;
+}
+
+#divChats .divChat .divUser {
+    display: none;
+}
+#divChats .divChat .divUser.active {
+    flex: 1 1 auto;
+    overflow: auto;
+    width: 100%;
+    color: white;
+    background-color: rgb(77, 77, 77);
+    padding: 1.5%;
+    display: block;
+}
+
+#divChats .divChat .divUser .btnRemove {
+    width: 140px;
+    border-radius: 4px;
+    padding: 6px;
+    outline: none;
+    margin-right: 2px;
+    cursor: pointer;
+    background-color: #595959;
+    color: white;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    border: 1px solid #404040;
+}
+#divChats .divChat .divUser .btnRemove:hover {
+    background-color: #ff0000;
+    border: 1px solid #990000;
+
+}
+#divChats .divChat .divUser .btnRemove:active {
+    background-color: #990000;
+}
+
+
+/*-----------------------------------------------------*/
+
+
+span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d1d1e0;
+}
+
+
+

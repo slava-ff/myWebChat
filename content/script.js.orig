@@ -1,0 +1,289 @@
+'use strict';
+var btnSubmit = document.getElementById('btnSubmit');
+var divText = document.getElementById('divText');
+var myText = document.getElementById('myText');
+var txtName = document.getElementById('txtName');
+var divList = document.getElementById('divList');
+
+var txtLoginName = document.getElementById('txtLoginName');
+var txtPassword1 = document.getElementById('txtPassword1');
+var txtPassword2 = document.getElementById('txtPassword2');
+var btnLogin = document.getElementById('btnLogin');
+var btnRegister = document.getElementById('btnRegister');
+
+var divLogReg = document.getElementById('divLogReg');
+var divChat = document.getElementById('divChat');
+
+txtLoginName.onkeydown = function (event) {
+    if (event.keyCode == 13) {
+        txtPassword1.focus();
+        return false;
+    }
+};
+txtPassword1.onkeydown = function (event) {
+    if (event.keyCode == 13) {
+        login();
+        return false;
+    }
+};
+txtPassword2.onkeydown = function (event) {
+    if (event.keyCode == 13) {
+        register();
+        return false;
+    }
+};
+btnLogin.onclick = login;
+btnRegister.onclick = register;
+
+
+function login () {
+    var uname = txtLoginName.value.trim(); //trim = value минус все крайние пробелы
+    if (!uname)  return alert("Login name must be defined!");
+    if (uname.length < 3) return alert("Login name must be at least 3 symbols!");
+    var pass1 = txtPassword1.value;
+    if (!pass1)  return alert("Password must be defined!");
+    if (pass1.length < 3) return alert("Password must be at least 3 symbols!");
+    ws_send ({
+        type: "check",
+        uname: uname,
+        pass1: pass1
+    })
+}
+function register () {
+    var uname = txtLoginName.value.trim(); //trim = value минус все крайние пробелы
+    if (!uname)  return alert("Login name must be defined!");
+    if (uname.length < 3) return alert("Login name must be at least 3 symbols!");
+    var pass1 = txtPassword1.value;
+    if (!pass1)  return alert("Password must be defined!");
+    if (pass1.length < 3) return alert("Password must be at least 3 symbols!");
+    var pass2 = txtPassword2.value;
+    if (!pass2)  return alert("Password must be defined!");
+    if (pass2.length < 3) return alert("Password must be at least 3 symbols!");
+    if (pass1.value != pass2.value) return alert("Passwords are not the same!");
+    ws_send ({
+        type: "check",
+        uname: uname,
+        pass1: pass1,
+        pass2: pass2
+    });
+}
+
+
+
+
+
+
+
+var me = {};
+console.log('me:', me);
+var users = {};
+console.log('users:', users);
+// users[me.id] = me;
+console.log('users:', users);
+var messages = [];
+
+txtName.value = me.name;
+myText.value = null;
+
+var ws = new WebSocket(location.origin.replace("http", "ws"), 'mylovelyproto'); // ws connection from client to server with protocol mylovelyproto
+function ws_send(o) {
+    var str = JSON.stringify(o);
+    ws.send(str);
+    console.log('sent:', str);
+}
+ws.onmessage = function (e) { // to chto prihodit is connection 1
+    console.log('recv:', e.data);
+    var msg = JSON.parse(e.data);
+    switch(msg.type) {
+        case 'check':
+            console.log('1msg.user:', msg.user);
+            if (msg.user) {
+                me = msg.user;
+                users[me.id] = me;
+                divLogReg.style.display = "none";
+                divChat.classList.add("active");
+                txtName.value = me.name;
+            } else {
+                alert("No user found!");
+            }
+            break;
+        case 'text':
+            messages.push(msg);
+            console.log('msg:', msg);
+            console.log('users:', users);
+            console.log('msg.userId:', msg.userId);
+
+            writeText(users[msg.userId], msg.text);
+            break;
+        case 'user':
+            users[msg.user.id] = msg.user;
+            changeUserName(users[msg.user.id]); //тут мы получаем сообщение типа юзер. О том что мы поменяли юзера. da tut pravilno
+            changeUserList(msg.user);
+            break;
+        // case 'join':
+        //     users[msg.user.id] = msg.user;
+        //     changeUserList(msg.user);
+        //     break;
+        // case 'left':
+        //     users[msg.user.id].status = "offline";
+        //     changeUserList(users[msg.user.id]);
+        //     break;
+        default:
+            console.error('unexpected message!!!', msg);
+    }
+};
+
+btnSubmit.onclick = addText;
+txtName.onkeydown = function (event) {
+    if (event.keyCode == 13) {
+        me.name = txtName.value;
+        var msg = {
+            type: 'user',
+            user: me
+        };
+        ws_send(msg);
+        changeUserName(msg.user); //user=>someuser
+        return false;
+    }
+};
+myText.onkeydown = function (event) {
+    if (event.keyCode == 13) {
+        addText();
+        return false;
+    }
+};
+
+function addText() {
+    var msg = {
+        type: 'text',
+        userId: me.id,
+        text: myText.value
+    };
+    ws_send(msg);
+    myText.value = null;
+
+    messages.push(msg);
+
+    ///writeText(me, msg.text);
+}
+
+function writeText (usr, txt) {
+    console.log("usr: ", usr);
+    console.log("txt: ", txt);
+    divText.innerHTML +=   '<span class = ' + usr.id + '>' + usr.name + '</span>: ' + txt + '<br/>';
+    divText.scrollTop += 1000000;
+}
+
+function changeUserName(usr) {
+    var spns = document.getElementsByClassName(usr.id);
+    for (var i = 0; i < spns.length; i++) {
+        var span = spns[i];
+        span.innerHTML = usr.name;
+    }
+
+}
+
+
+function changeUserList(usr) {          //третья версия с точками, эксперимент
+    if (usr.id == me.id) return;
+    var divUser = document.getElementById(usr.id);
+    if (divUser) {
+        divUser.classList.remove("online");
+        divUser.classList.remove("offline");
+        divUser.classList.add(usr.status);
+        divUser.innerHTML = '<img id="myImage" src="icon-' + usr.status + '.png" width="10" height="10">' + usr.name;
+    } else {
+        divList.innerHTML += '<div id="' + usr.id + '" class="divUser ' + usr.status + '">' +
+            '<img id="myImage" src="icon-' + usr.status + '.png" width="10" height="10">' + usr.name + '</div>';
+        }
+}
+
+// var s1 = "xxx",
+//     s2 = s1;
+// console.log("s1:", s1, "s2:", s2);
+// s1 = "yyy";
+// console.log("s1:", s1, "s2:", s2);
+// s2 = "zzz";
+// console.log("s1:", s1, "s2:", s2);
+
+//i sravni s etim:
+
+//     var o1 = {s: "xxx"},
+//         o2 = o1;
+// console.log("o1:", o1, "o2:", o2);
+// o1.s = "yyy";
+// console.log("o1:", o1, "o2:", o2);
+// o2.s = "zzz";
+// console.log("o1:", o1, "o2:", o2);
+
+// ЗАДАНИЯ: ------------------------------------------------------------------------
+
+// 1) не отправлять пароли других юзеров
+// 2) под My name - выпадающее окошко с выбором статуса (желаемого), который записывается в поле "status"
+// 3) сделать решения, чтоб если юзер на самом деле оффлайн, то вне зависимости от желаемого статуса, показывался всегда "оффлайн"
+//
+// 4) сделать logout
+// 5) чтобы юзер мог менять password
+// 6) чтобы юзер мог добавить аватарку
+// 7) добавить время сообщения кто когда писал
+// 8) чтобы юзер мог исправлять опечатки в предыдущих сообщениях
+
+// 10) чтобы можно было писать только отдельному юзеру
+// 11) notification, что новое непрочитанное сообщение -  https://developer.mozilla.org/en-US/docs/Web/API/notification
+// 12) от alex: Звук отправления и получения сообщения. неясно отправил или нет. надо смотреть в чать. если народу много - не увидишь
+// 13) от alex: добавить возможность писать не одним предложением а несколько. как в скайпе скажем. через контрол +enter
+// 14) от Насти: js подключен. просто у пользователя может стоять в браузере параметр не загружать скрипты, тогда все
+//     не заработает. поэтому надо предусматривать, чтобы сайт работал без скриптов, либо выводить сообщение, выкидывать
+//     на страницу, что ничего без включения js сделать нельзя
+// 15) сделать нотификейшн, что поменялось имя
+// 17) имена разного цвета (или хотя бы свое чтоб выделялось)
+// 18) еще отоброжаемое имя и логин можно чтобы отличались - но это даже не знаю, стОит ли
+// 21) сделать работающими точки online и offline
+
+
+// +9) исправить ошибки
+// +16) padding в поле для ввода и в сообщениях
+// +19) чтобы вся история сообщений показывалась вместе с моими сообщениями
+// +20) оменять местами дивлист и дивчат
+
+// var keys = Object.keys(clients); // see internet
+
+//----------------------------------------------------------------------------------
+
+
+
+// всегда непонятные вещи для себя проверяй и изучай через ЛОГ!!!!
+
+// в JS Tutorial Regexp skip
+
+
+//--------------------------------------
+// есть два решения замены текста - без полной очистки и с полной очисткой div-текста).
+// refreshText1 - с полной оичсткой, changeUserName - с заменой через спан
+
+// function refreshText1() {
+//     divText.innerHTML = null;
+//     messages.forEach(function (message) {
+//         console.log('message: ',message);
+//         var id = message.userId;
+//         console.log('id: ',id);
+//         var name = users[id].name;
+//         console.log('name: ',name);
+//         divText.innerHTML +=   name  + ': ' + message.text + '<br/>';
+//     });
+//     divText.scrollTop += 1000000;
+// }
+//--------------------------------------
+
+
+
+// так работает ф-ция:
+
+// function f1(someuser) {
+//     console.log(someuser);
+// }
+//
+// var p1 = 'gshdfasjhdg';
+// var p2 = 356473;
+// f1(p1);
+// f1(p2); //я поняллл. Я забыл об этом(
